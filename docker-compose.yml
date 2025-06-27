@@ -19,6 +19,17 @@ services:
     networks:
       - appnet
 
+  mysql_test:
+    image: mysql:8.0
+    container_name: mysql_test
+    environment:
+      MYSQL_DATABASE: laravel_eee_test
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    volumes:
+      - mysql_test_data:/var/lib/mysql
+    networks:
+      - appnet
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
@@ -109,3 +120,4 @@ services:
 volumes:
   mysql_data:
   storage_data:
+  mysql_test_data:
