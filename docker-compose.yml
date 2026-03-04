@@ -77,7 +77,7 @@ services:
       context: ../car_rent_backend
       dockerfile: Dockerfile
     container_name: php-worker
-    command: php artisan queue:work --tries=3
+    command: php artisan queue:work rabbitmq --queue=go-report --tries=3
     env_file:
       - ../car_rent_backend/.env
     depends_on:
@@ -116,8 +116,11 @@ services:
       - appnet
     ports:
       - "8002:8002"
+    volumes:
+      - export_data:/app/exports
 
 volumes:
   mysql_data:
   storage_data:
   mysql_test_data:
+  export_data:
