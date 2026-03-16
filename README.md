@@ -1,27 +1,27 @@
 # Инструкция по запуску проекта CarRent
 
-**1. Клонируем репозиторий develop:
+1. Клонируем репозиторий develop:
 https://github.com/alexanderradko190/develop.git
 
-**2. Клонируем репозиторий car-rent-backend:
+2. Клонируем репозиторий car-rent-backend:
 https://github.com/alexanderradko190/car-rent-backend.git
 
 Копируем .env.example и создаем .env файл.
 Для генерации тестовых данных на русском языке указываем
 APP_FAKER_LOCALE=ru_RU
 
-**2. Клонируем репозиторий car-rent-helper:
+3. Клонируем репозиторий car-rent-helper:
 https://github.com/alexanderradko190/car-rent-helper.git
 
 Копируем .env.example и создаем .env файл
 Проверяем, что база данных для проекта создана
 
-**3. Переходим cd develop и выполняем сборку:
+4. Переходим cd develop и выполняем сборку:
 ```bash
 docker-compose up -d --build
 ```
 
-**4. Переходим cd car-rent-backend.
+5. Переходим cd car-rent-backend.
 Генерируем ключ и JWT-секрет:
 ```bash
 docker exec laravel-app php artisan key:generate
@@ -44,7 +44,7 @@ docker exec laravel-app php artisan db:seed
 ```
 
 
-**5. Клонируем car-rent-frontend
+6. Клонируем car-rent-frontend
 https://github.com/alexanderradko190/car-rent-frontend.git
 
 Переходим cd car-rent-frontend
