@@ -11,7 +11,7 @@ https://github.com/alexanderradko190/car-rent-backend.git
 APP_FAKER_LOCALE=ru_RU
 
 **2. Клонируем репозиторий car-rent-helper:
-https://github.com/alexanderradko190/car-rent-go.git
+https://github.com/alexanderradko190/car-rent-helper.git
 
 Копируем .env.example и создаем .env файл
 Проверяем, что база данных для проекта создана
