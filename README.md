@@ -1,5 +1,7 @@
 # Инструкция по запуску проекта CarRent
 
+Файлы с кодом проекта открываются с включенным VPN
+
 1. Клонируем репозиторий develop:
 https://github.com/alexanderradko190/develop.git
 
