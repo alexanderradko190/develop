@@ -40,18 +40,18 @@ docker exec laravel-app php artisan storage:link
 docker exec laravel-app php artisan migrate
 ```
 
-Раскатываем тестовые данные через Seeder и Faker
+Раскатываем тестовые данные через Seeder и Faker:
 ```bash
 docker exec laravel-app php artisan db:seed
 ```
 
 
-6. Клонируем car-rent-frontend
+6. Клонируем car-rent-frontend:
 https://github.com/alexanderradko190/car-rent-frontend.git
 
 Переходим cd car-rent-frontend
 
-Выполоняем: 
+Выполняем: 
 ```bash
 npm install
 npm run dev
